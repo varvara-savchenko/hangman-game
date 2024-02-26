@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'RocketToMars';
+    src: url("./fonts/RocketToMars.ttf");
+}
+
+body {
+    background-color: #f0f0f0;
+    background-image: url("./img/paper1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+.cta {
+    display: flex;
+}
+
+#returnButton {
+    border: 0px;
+    position: flex;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#attemptsContainer {
+    margin-left: auto;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#returnButton img {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+
+#attemptsContainer img {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+#attemptsContainer h4 {
+    display: inline-block;
+    font-family: "RocketToMars", sans-serif;
+    font-size: 35px;
+}
+
+
+#lettersContainer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+.letterButton {
+    font-family: "RocketToMars", sans-serif;
+    font-size: 60px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+.letterButton:hover {
+    color: #f0f0f0;
+    background-color: rgb(43, 40, 40);
+}
+
+#wordContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#wordContainer img {
+    width: 100px;
+    height: 100px;
+
+}
+
+#hangman {
+    text-align: center;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+#hangman img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.revealed-letter {
+    position: absolute;
+    /* Position the revealed letter absolutely */
+    top: 0;
+    /* Adjust positioning as needed */
+    left: 0;
+    /* Adjust positioning as needed */
+    font-family: "RocketToMars", sans-serif;
+    font-size: 30px;
+}
